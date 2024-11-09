@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      /*
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+*/
+      /*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        /* 1 */
+        border-width: 0;
+        /* 2 */
+        border-style: solid;
+        /* 2 */
+        border-color: #e5e7eb;
+        /* 2 */
+      }
+      ::before,
+      ::after {
+        --tw-content: "";
+      }
+      /*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+      html,
+      :host {
+        line-height: 1.5;
+        /* 1 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+        -moz-tab-size: 4;
+        /* 3 */
+        tab-size: 4;
+        /* 3 */
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        /* 4 */
+        font-feature-settings: normal;
+        /* 5 */
+        font-variation-settings: normal;
+        /* 6 */
+        -webkit-tap-highlight-color: transparent;
+        /* 7 */
+      }
+      /*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+      body {
+        margin: 0;
+        /* 1 */
+        line-height: inherit;
+        /* 2 */
+      }
+      /*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+      hr {
+        height: 0;
+        /* 1 */
+        color: inherit;
+        /* 2 */
+        border-top-width: 1px;
+        /* 3 */
+      }
+      /*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+      abbr:where([title]) {
+        text-decoration: underline dotted;
+      }
+      /*
+Remove the default font size and weight for headings.
+*/
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      /*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      /*
+Add the correct font weight in Edge and Safari.
+*/
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      /*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+      code,
+      kbd,
+      samp,
+      pre {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        /* 1 */
+        font-feature-settings: normal;
+        /* 2 */
+        font-variation-settings: normal;
+        /* 3 */
+        font-size: 1em;
+        /* 4 */
+      }
+      /*
+Add the correct font size in all browsers.
+*/
+      small {
+        font-size: 80%;
+      }
+      /*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      /*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+      table {
+        text-indent: 0;
+        /* 1 */
+        border-color: inherit;
+        /* 2 */
+        border-collapse: collapse;
+        /* 3 */
+      }
+      /*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        /* 1 */
+        font-feature-settings: inherit;
+        /* 1 */
+        font-variation-settings: inherit;
+        /* 1 */
+        font-size: 100%;
+        /* 1 */
+        font-weight: inherit;
+        /* 1 */
+        line-height: inherit;
+        /* 1 */
+        letter-spacing: inherit;
+        /* 1 */
+        color: inherit;
+        /* 1 */
+        margin: 0;
+        /* 2 */
+        padding: 0;
+        /* 3 */
+      }
+      /*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+      button,
+      select {
+        text-transform: none;
+      }
+      /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        /* 1 */
+        background-color: transparent;
+        /* 2 */
+        background-image: none;
+        /* 2 */
+      }
+      /*
+Use the modern Firefox focus style for all focusable elements.
+*/
+      :-moz-focusring {
+        outline: auto;
+      }
+      /*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      /*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+      progress {
+        vertical-align: baseline;
+      }
+      /*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      /*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+      [type="search"] {
+        -webkit-appearance: textfield;
+        /* 1 */
+        outline-offset: -2px;
+        /* 2 */
+      }
+      /*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        /* 1 */
+        font: inherit;
+        /* 2 */
+      }
+      /*
+Add the correct display in Chrome and Safari.
+*/
+      summary {
+        display: list-item;
+      }
+      /*
+Removes the default spacing and border for appropriate elements.
+*/
+      blockquote,
+      dl,
+      dd,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      figure,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+      legend {
+        padding: 0;
+      }
+      ol,
+      ul,
+      menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      /*
+Reset default styling for dialogs.
+*/
+      dialog {
+        padding: 0;
+      }
+      /*
+Prevent resizing textareas horizontally by default.
+*/
+      textarea {
+        resize: vertical;
+      }
+      /*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        /* 1 */
+        color: #9ca3af;
+        /* 2 */
+      }
+      /*
+Set the default cursor for buttons.
+*/
+      button,
+      [role="button"] {
+        cursor: pointer;
+      }
+      /*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+      :disabled {
+        cursor: default;
+      }
+      /*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+      img,
+      svg,
+      video,
+      canvas,
+      audio,
+      iframe,
+      embed,
+      object {
+        display: block;
+        /* 1 */
+        vertical-align: middle;
+        /* 2 */
+      }
+      /*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      /* Make elements with the HTML hidden attribute stay hidden by default */
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .ml-1 {
+        margin-left: 0.25rem;
+      }
+      .ml-8 {
+        margin-left: 2rem;
+      }
+      .mr-2 {
+        margin-right: 0.5rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .h-screen {
+        height: 100vh;
+      }
+      .-translate-y-3 {
+        --tw-translate-y: -0.75rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .bg-zinc-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .text-9xl {
+        font-size: 8rem;
+        line-height: 1;
+      }
+      .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgb(209 213 219 / var(--tw-text-opacity));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+      .opacity-90 {
+        opacity: 0.9;
+      }
+    </style>
+    <script>
+      !(function (t, e) {
+        "object" == typeof exports && "undefined" != typeof module
+          ? (module.exports = e())
+          : "function" == typeof define && define.amd
+          ? define(e)
+          : ((t =
+              "undefined" != typeof globalThis ? globalThis : t || self).dayjs =
+              e());
+      })(this, function () {
+        "use strict";
+        var t = 1e3,
+          e = 6e4,
+          n = 36e5,
+          r = "millisecond",
+          i = "second",
+          s = "minute",
+          u = "hour",
+          a = "day",
+          o = "week",
+          c = "month",
+          f = "quarter",
+          h = "year",
+          d = "date",
+          l = "Invalid Date",
+          $ =
+            /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,
+          y =
+            /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,
+          M = {
+            name: "en",
+            weekdays:
+              "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+                "_"
+              ),
+            months:
+              "January_February_March_April_May_June_July_August_September_October_November_December".split(
+                "_"
+              ),
+            ordinal: function (t) {
+              var e = ["th", "st", "nd", "rd"],
+                n = t % 100;
+              return "[" + t + (e[(n - 20) % 10] || e[n] || e[0]) + "]";
+            },
+          },
+          m = function (t, e, n) {
+            var r = String(t);
+            return !r || r.length >= e
+              ? t
+              : "" + Array(e + 1 - r.length).join(n) + t;
+          },
+          v = {
+            s: m,
+            z: function (t) {
+              var e = -t.utcOffset(),
+                n = Math.abs(e),
+                r = Math.floor(n / 60),
+                i = n % 60;
+              return (e <= 0 ? "+" : "-") + m(r, 2, "0") + ":" + m(i, 2, "0");
+            },
+            m: function t(e, n) {
+              if (e.date() < n.date()) return -t(n, e);
+              var r = 12 * (n.year() - e.year()) + (n.month() - e.month()),
+                i = e.clone().add(r, c),
+                s = n - i < 0,
+                u = e.clone().add(r + (s ? -1 : 1), c);
+              return +(-(r + (n - i) / (s ? i - u : u - i)) || 0);
+            },
+            a: function (t) {
+              return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
+            },
+            p: function (t) {
+              return (
+                { M: c, y: h, w: o, d: a, D: d, h: u, m: s, s: i, ms: r, Q: f }[
+                  t
+                ] ||
+                String(t || "")
+                  .toLowerCase()
+                  .replace(/s$/, "")
+              );
+            },
+            u: function (t) {
+              return void 0 === t;
+            },
+          },
+          g = "en",
+          D = {};
+        D[g] = M;
+        var p = "$isDayjsObject",
+          S = function (t) {
+            return t instanceof _ || !(!t || !t[p]);
+          },
+          w = function t(e, n, r) {
+            var i;
+            if (!e) return g;
+            if ("string" == typeof e) {
+              var s = e.toLowerCase();
+              D[s] && (i = s), n && ((D[s] = n), (i = s));
+              var u = e.split("-");
+              if (!i && u.length > 1) return t(u[0]);
+            } else {
+              var a = e.name;
+              (D[a] = e), (i = a);
+            }
+            return !r && i && (g = i), i || (!r && g);
+          },
+          O = function (t, e) {
+            if (S(t)) return t.clone();
+            var n = "object" == typeof e ? e : {};
+            return (n.date = t), (n.args = arguments), new _(n);
+          },
+          b = v;
+        (b.l = w),
+          (b.i = S),
+          (b.w = function (t, e) {
+            return O(t, {
+              locale: e.$L,
+              utc: e.$u,
+              x: e.$x,
+              $offset: e.$offset,
+            });
+          });
+        var _ = (function () {
+            function M(t) {
+              (this.$L = w(t.locale, null, !0)),
+                this.parse(t),
+                (this.$x = this.$x || t.x || {}),
+                (this[p] = !0);
+            }
+            var m = M.prototype;
+            return (
+              (m.parse = function (t) {
+                (this.$d = (function (t) {
+                  var e = t.date,
+                    n = t.utc;
+                  if (null === e) return new Date(NaN);
+                  if (b.u(e)) return new Date();
+                  if (e instanceof Date) return new Date(e);
+                  if ("string" == typeof e && !/Z$/i.test(e)) {
+                    var r = e.match($);
+                    if (r) {
+                      var i = r[2] - 1 || 0,
+                        s = (r[7] || "0").substring(0, 3);
+                      return n
+                        ? new Date(
+                            Date.UTC(
+                              r[1],
+                              i,
+                              r[3] || 1,
+                              r[4] || 0,
+                              r[5] || 0,
+                              r[6] || 0,
+                              s
+                            )
+                          )
+                        : new Date(
+                            r[1],
+                            i,
+                            r[3] || 1,
+                            r[4] || 0,
+                            r[5] || 0,
+                            r[6] || 0,
+                            s
+                          );
+                    }
+                  }
+                  return new Date(e);
+                })(t)),
+                  this.init();
+              }),
+              (m.init = function () {
+                var t = this.$d;
+                (this.$y = t.getFullYear()),
+                  (this.$M = t.getMonth()),
+                  (this.$D = t.getDate()),
+                  (this.$W = t.getDay()),
+                  (this.$H = t.getHours()),
+                  (this.$m = t.getMinutes()),
+                  (this.$s = t.getSeconds()),
+                  (this.$ms = t.getMilliseconds());
+              }),
+              (m.$utils = function () {
+                return b;
+              }),
+              (m.isValid = function () {
+                return !(this.$d.toString() === l);
+              }),
+              (m.isSame = function (t, e) {
+                var n = O(t);
+                return this.startOf(e) <= n && n <= this.endOf(e);
+              }),
+              (m.isAfter = function (t, e) {
+                return O(t) < this.startOf(e);
+              }),
+              (m.isBefore = function (t, e) {
+                return this.endOf(e) < O(t);
+              }),
+              (m.$g = function (t, e, n) {
+                return b.u(t) ? this[e] : this.set(n, t);
+              }),
+              (m.unix = function () {
+                return Math.floor(this.valueOf() / 1e3);
+              }),
+              (m.valueOf = function () {
+                return this.$d.getTime();
+              }),
+              (m.startOf = function (t, e) {
+                var n = this,
+                  r = !!b.u(e) || e,
+                  f = b.p(t),
+                  l = function (t, e) {
+                    var i = b.w(
+                      n.$u ? Date.UTC(n.$y, e, t) : new Date(n.$y, e, t),
+                      n
+                    );
+                    return r ? i : i.endOf(a);
+                  },
+                  $ = function (t, e) {
+                    return b.w(
+                      n
+                        .toDate()
+                        [t].apply(
+                          n.toDate("s"),
+                          (r ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)
+                        ),
+                      n
+                    );
+                  },
+                  y = this.$W,
+                  M = this.$M,
+                  m = this.$D,
+                  v = "set" + (this.$u ? "UTC" : "");
+                switch (f) {
+                  case h:
+                    return r ? l(1, 0) : l(31, 11);
+                  case c:
+                    return r ? l(1, M) : l(0, M + 1);
+                  case o:
+                    var g = this.$locale().weekStart || 0,
+                      D = (y < g ? y + 7 : y) - g;
+                    return l(r ? m - D : m + (6 - D), M);
+                  case a:
+                  case d:
+                    return $(v + "Hours", 0);
+                  case u:
+                    return $(v + "Minutes", 1);
+                  case s:
+                    return $(v + "Seconds", 2);
+                  case i:
+                    return $(v + "Milliseconds", 3);
+                  default:
+                    return this.clone();
+                }
+              }),
+              (m.endOf = function (t) {
+                return this.startOf(t, !1);
+              }),
+              (m.$set = function (t, e) {
+                var n,
+                  o = b.p(t),
+                  f = "set" + (this.$u ? "UTC" : ""),
+                  l = ((n = {}),
+                  (n[a] = f + "Date"),
+                  (n[d] = f + "Date"),
+                  (n[c] = f + "Month"),
+                  (n[h] = f + "FullYear"),
+                  (n[u] = f + "Hours"),
+                  (n[s] = f + "Minutes"),
+                  (n[i] = f + "Seconds"),
+                  (n[r] = f + "Milliseconds"),
+                  n)[o],
+                  $ = o === a ? this.$D + (e - this.$W) : e;
+                if (o === c || o === h) {
+                  var y = this.clone().set(d, 1);
+                  y.$d[l]($),
+                    y.init(),
+                    (this.$d = y.set(d, Math.min(this.$D, y.daysInMonth())).$d);
+                } else l && this.$d[l]($);
+                return this.init(), this;
+              }),
+              (m.set = function (t, e) {
+                return this.clone().$set(t, e);
+              }),
+              (m.get = function (t) {
+                return this[b.p(t)]();
+              }),
+              (m.add = function (r, f) {
+                var d,
+                  l = this;
+                r = Number(r);
+                var $ = b.p(f),
+                  y = function (t) {
+                    var e = O(l);
+                    return b.w(e.date(e.date() + Math.round(t * r)), l);
+                  };
+                if ($ === c) return this.set(c, this.$M + r);
+                if ($ === h) return this.set(h, this.$y + r);
+                if ($ === a) return y(1);
+                if ($ === o) return y(7);
+                var M =
+                    ((d = {}), (d[s] = e), (d[u] = n), (d[i] = t), d)[$] || 1,
+                  m = this.$d.getTime() + r * M;
+                return b.w(m, this);
+              }),
+              (m.subtract = function (t, e) {
+                return this.add(-1 * t, e);
+              }),
+              (m.format = function (t) {
+                var e = this,
+                  n = this.$locale();
+                if (!this.isValid()) return n.invalidDate || l;
+                var r = t || "YYYY-MM-DDTHH:mm:ssZ",
+                  i = b.z(this),
+                  s = this.$H,
+                  u = this.$m,
+                  a = this.$M,
+                  o = n.weekdays,
+                  c = n.months,
+                  f = n.meridiem,
+                  h = function (t, n, i, s) {
+                    return (t && (t[n] || t(e, r))) || i[n].slice(0, s);
+                  },
+                  d = function (t) {
+                    return b.s(s % 12 || 12, t, "0");
+                  },
+                  $ =
+                    f ||
+                    function (t, e, n) {
+                      var r = t < 12 ? "AM" : "PM";
+                      return n ? r.toLowerCase() : r;
+                    };
+                return r.replace(y, function (t, r) {
+                  return (
+                    r ||
+                    (function (t) {
+                      switch (t) {
+                        case "YY":
+                          return String(e.$y).slice(-2);
+                        case "YYYY":
+                          return b.s(e.$y, 4, "0");
+                        case "M":
+                          return a + 1;
+                        case "MM":
+                          return b.s(a + 1, 2, "0");
+                        case "MMM":
+                          return h(n.monthsShort, a, c, 3);
+                        case "MMMM":
+                          return h(c, a);
+                        case "D":
+                          return e.$D;
+                        case "DD":
+                          return b.s(e.$D, 2, "0");
+                        case "d":
+                          return String(e.$W);
+                        case "dd":
+                          return h(n.weekdaysMin, e.$W, o, 2);
+                        case "ddd":
+                          return h(n.weekdaysShort, e.$W, o, 3);
+                        case "dddd":
+                          return o[e.$W];
+                        case "H":
+                          return String(s);
+                        case "HH":
+                          return b.s(s, 2, "0");
+                        case "h":
+                          return d(1);
+                        case "hh":
+                          return d(2);
+                        case "a":
+                          return $(s, u, !0);
+                        case "A":
+                          return $(s, u, !1);
+                        case "m":
+                          return String(u);
+                        case "mm":
+                          return b.s(u, 2, "0");
+                        case "s":
+                          return String(e.$s);
+                        case "ss":
+                          return b.s(e.$s, 2, "0");
+                        case "SSS":
+                          return b.s(e.$ms, 3, "0");
+                        case "Z":
+                          return i;
+                      }
+                      return null;
+                    })(t) ||
+                    i.replace(":", "")
+                  );
+                });
+              }),
+              (m.utcOffset = function () {
+                return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+              }),
+              (m.diff = function (r, d, l) {
+                var $,
+                  y = this,
+                  M = b.p(d),
+                  m = O(r),
+                  v = (m.utcOffset() - this.utcOffset()) * e,
+                  g = this - m,
+                  D = function () {
+                    return b.m(y, m);
+                  };
+                switch (M) {
+                  case h:
+                    $ = D() / 12;
+                    break;
+                  case c:
+                    $ = D();
+                    break;
+                  case f:
+                    $ = D() / 3;
+                    break;
+                  case o:
+                    $ = (g - v) / 6048e5;
+                    break;
+                  case a:
+                    $ = (g - v) / 864e5;
+                    break;
+                  case u:
+                    $ = g / n;
+                    break;
+                  case s:
+                    $ = g / e;
+                    break;
+                  case i:
+                    $ = g / t;
+                    break;
+                  default:
+                    $ = g;
+                }
+                return l ? $ : b.a($);
+              }),
+              (m.daysInMonth = function () {
+                return this.endOf(c).$D;
+              }),
+              (m.$locale = function () {
+                return D[this.$L];
+              }),
+              (m.locale = function (t, e) {
+                if (!t) return this.$L;
+                var n = this.clone(),
+                  r = w(t, e, !0);
+                return r && (n.$L = r), n;
+              }),
+              (m.clone = function () {
+                return b.w(this.$d, this);
+              }),
+              (m.toDate = function () {
+                return new Date(this.valueOf());
+              }),
+              (m.toJSON = function () {
+                return this.isValid() ? this.toISOString() : null;
+              }),
+              (m.toISOString = function () {
+                return this.$d.toISOString();
+              }),
+              (m.toString = function () {
+                return this.$d.toUTCString();
+              }),
+              M
+            );
+          })(),
+          k = _.prototype;
+        return (
+          (O.prototype = k),
+          [
+            ["$ms", r],
+            ["$s", i],
+            ["$m", s],
+            ["$H", u],
+            ["$W", a],
+            ["$M", c],
+            ["$y", h],
+            ["$D", d],
+          ].forEach(function (t) {
+            k[t[1]] = function (e) {
+              return this.$g(e, t[0], t[1]);
+            };
+          }),
+          (O.extend = function (t, e) {
+            return t.$i || (t(e, _, O), (t.$i = !0)), O;
+          }),
+          (O.locale = w),
+          (O.isDayjs = S),
+          (O.unix = function (t) {
+            return O(1e3 * t);
+          }),
+          (O.en = D[g]),
+          (O.Ls = D),
+          (O.p = {}),
+          O
+        );
+      });
+
+      function updateDateTime() {
+        const hour = dayjs().format("h");
+        document.querySelector("#hour").textContent = hour;
+
+        const minutes = dayjs().format("mm");
+        document.querySelector("#minutes").textContent = minutes;
+
+        const ampm = dayjs().format("A");
+        document.querySelector("#ampm").textContent = ampm;
+
+        const date = dayjs().format("dddd, D MMMM YYYY");
+        document.querySelector("#date").textContent = date;
+      }
+
+      // call the `updateDateTime` function every second
+      setInterval(updateDateTime, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="flex h-screen items-center justify-center bg-zinc-800">
+      <div class="flex flex-col items-center text-white">
+        <h1 class="mb-6 flex items-center text-9xl">
+          <span id="hour">-</span>
+          <span class="ml-1 mr-2 -translate-y-3">:</span>
+          <span id="minutes">--</span>
+          <span id="ampm" class="ml-8 text-6xl">--</span>
+        </h1>
+        <h2 id="date" class="mb-4 text-4xl text-gray-300 opacity-90">--</h2>
+      </div>
+    </div>
+    <script>
+      updateDateTime();
+    </script>
+  </body>
+</html>
